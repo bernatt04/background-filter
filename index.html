@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A real-time background removal filter using MediaPipe." />
+    <title>Background Filter</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="canvas-container">
+        <canvas id="output-canvas"></canvas>
+      </div>
+      
+      <div class="controls">
+        <button class="filter-btn active" data-type="color" data-value="#1a1a1a">Dark</button>
+        <button class="filter-btn" data-type="color" data-value="#ffffff">White</button>
+        <button class="filter-btn" data-type="color" data-value="#00ff00">Green Screen</button>
+        <button class="filter-btn" data-type="blur">Blur</button>
+      </div>
+
+      <video id="input-video" playsinline muted></video>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
